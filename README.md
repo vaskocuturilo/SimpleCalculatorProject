@@ -46,9 +46,4 @@ You will need the following technologies available to try it out:
 ```allure serve /path/to/outputDirectory```
 
 
-![]() 
-
-![]()
-
-![]()
-
+![](https://c.radikal.ru/c08/2106/22/053d4fa9cd71.png) 

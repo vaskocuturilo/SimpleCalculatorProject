@@ -1,4 +1,4 @@
-# The simpleCalculator
+# The Simple Calculator project with automation scripts.
 
 ## Test scenario:
 - Create simple application calculator.

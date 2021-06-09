@@ -18,6 +18,10 @@
 		3DA185FF2200901C00EAED18 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA185FE2200901C00EAED18 /* Constants.swift */; };
 		3DA186012200B15B00EAED18 /* OperationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA186002200B15B00EAED18 /* OperationModel.swift */; };
 		72393339266E684100004A0D /* SimpleCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72393338266E684100004A0D /* SimpleCalculatorUITests.swift */; };
+		72B4B2F12670CED40072CA15 /* SimpleCalculatorUIPageObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B2F02670CED40072CA15 /* SimpleCalculatorUIPageObjectTest.swift */; };
+		72B4B30E2670D9510072CA15 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B30D2670D9510072CA15 /* BaseClass.swift */; };
+		72B4B3152670D98B0072CA15 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B3142670D98B0072CA15 /* CalculatorScreen.swift */; };
+		72B4B31B2670DA5F0072CA15 /* PageObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B31A2670DA5F0072CA15 /* PageObject.swift */; };
 		F17BEF47674D6BCAF5A5B158 /* Pods_SimpleCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E974D233489DECEF86014894 /* Pods_SimpleCalculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +52,10 @@
 		72393336266E684100004A0D /* SimpleCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72393338266E684100004A0D /* SimpleCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculatorUITests.swift; sourceTree = "<group>"; };
 		7239333A266E684100004A0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72B4B2F02670CED40072CA15 /* SimpleCalculatorUIPageObjectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCalculatorUIPageObjectTest.swift; sourceTree = "<group>"; };
+		72B4B30D2670D9510072CA15 /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
+		72B4B3142670D98B0072CA15 /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
+		72B4B31A2670DA5F0072CA15 /* PageObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageObject.swift; sourceTree = "<group>"; };
 		7BF78B81773B3FC4F962056A /* Pods-SimpleCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleCalculator/Pods-SimpleCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		7E8250D74CF71478C0C6487B /* Pods-SimpleCalculator-SimpleCalculatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCalculator-SimpleCalculatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleCalculator-SimpleCalculatorTests/Pods-SimpleCalculator-SimpleCalculatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A41EABEA64813EA5C20CCA7 /* Pods-SimpleCalculator-SimpleCalculatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleCalculator-SimpleCalculatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleCalculator-SimpleCalculatorTests/Pods-SimpleCalculator-SimpleCalculatorTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +113,8 @@
 		3DA185DB21FFCDAB00EAED18 /* SimpleCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				72B4B3132670D9780072CA15 /* Screens */,
+				72B4B30C2670D9400072CA15 /* Base */,
 				3DA185F121FFDA5E00EAED18 /* Application */,
 				3DA185F221FFDA7200EAED18 /* Resources */,
 				3DA185F321FFDAFC00EAED18 /* MVP */,
@@ -184,8 +194,26 @@
 			children = (
 				72393338266E684100004A0D /* SimpleCalculatorUITests.swift */,
 				7239333A266E684100004A0D /* Info.plist */,
+				72B4B2F02670CED40072CA15 /* SimpleCalculatorUIPageObjectTest.swift */,
 			);
 			path = SimpleCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		72B4B30C2670D9400072CA15 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B30D2670D9510072CA15 /* BaseClass.swift */,
+				72B4B31A2670DA5F0072CA15 /* PageObject.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		72B4B3132670D9780072CA15 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				72B4B3142670D98B0072CA15 /* CalculatorScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		CB46A45A8E7AEF43722B37FD /* Frameworks */ = {
@@ -353,7 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B4B2F12670CED40072CA15 /* SimpleCalculatorUIPageObjectTest.swift in Sources */,
+				72B4B31B2670DA5F0072CA15 /* PageObject.swift in Sources */,
+				72B4B30E2670D9510072CA15 /* BaseClass.swift in Sources */,
 				72393339266E684100004A0D /* SimpleCalculatorUITests.swift in Sources */,
+				72B4B3152670D98B0072CA15 /* CalculatorScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,10 +32,17 @@ You will need the following technologies available to try it out:
 
 ```.```
 
-- [x] ability to run tests for different browsers/os by configuring;
-- [x] ability to run tests for different environments(urls) by configuring/by command-line.
+# xcresults
+A command line tool to extract test summaries & screenshots from Xcode 11 XCResult files.
 
-```.``` 
+# Installation
+Download latest version from github releases:
+
+wget https://github.com/eroshenkoam/xcresults/releases/latest/download/xcresults
+
+# And make it executable:
+
+chmod +x xcresults
 
 ### Generate Allure report 
 

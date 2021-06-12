@@ -30,7 +30,7 @@ You will need the following technologies available to try it out:
 * 
 ### Ho w to run
 
-```.```
+```xcodebuild test -workspace SimpleCalculator.xcworkspace -scheme SimpleCalculator -destination 'platform=iOS Simulator,name=iPhone 8,OS=14.0' -resultBundlePath TestResults```
 
 # xcresults
 A command line tool to extract test summaries & screenshots from Xcode 11 XCResult files.
@@ -46,11 +46,15 @@ chmod +x xcresults
 
 ### Generate Allure report 
 
-```xcresults export /path/to/Test.xcresult /path/to/outputDirectory```
+```./xcresults export TestResults.xcresult/ outputDirectory```
 
 ### Open Allure report in browser
 
-```allure serve /path/to/outputDirectory```
+```allure serve outputDirectory/```
 
 
 ![](https://c.radikal.ru/c08/2106/22/053d4fa9cd71.png) 
+
+![](https://d.radikal.ru/d07/2106/8a/624c8c45f39a.png) 
+
+![](https://c.radikal.ru/c18/2106/f2/3f5febc69fde.png) 
